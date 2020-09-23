@@ -1,6 +1,5 @@
 RSpec.describe Api::V1::ProductsController, type: :request do
-  let!(:product1) { create(:product, name: 'Chicken Wings') }
-  let!(:product2) { create(:product, name: 'Kebab') }
+  `let!(:products) {2.times { create(:product) }}`
 
   describe 'GET /api/v1/products' do
     before do
